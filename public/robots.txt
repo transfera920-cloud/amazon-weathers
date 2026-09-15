@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://c433e1e5-amazon-weathers.yy661003.workers.dev/sitemap.xml

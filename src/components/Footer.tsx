@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
           <div>
             <div className="flex items-center space-x-2 text-emerald-400 font-bold text-base mb-1">
               <Mountain className="w-5 h-5" aria-hidden="true" />
-              <span>亞馬遜國家山岳協會</span>
+              <a href="https://amazon-hike.com/intro">亞馬遜國家山岳協會</a>
             </div>
             <div className="text-xs text-stone-400 font-medium">
               Amazon National Mountain Association · 登山教育計畫
