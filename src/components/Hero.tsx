@@ -16,7 +16,7 @@ export const Hero: React.FC = () => {
         <nav aria-label="麵包屑導航" className="mb-4">
           <ol className="flex flex-wrap items-center gap-1.5 text-xs text-stone-400">
             <li>
-              <a href="#top" className="hover:text-emerald-400 transition-colors">
+              <a href="https://amazon-hike.com/intro" className="hover:text-emerald-400 transition-colors">
                 亞馬遜國家山岳協會
               </a>
             </li>

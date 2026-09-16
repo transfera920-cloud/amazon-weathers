@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://c433e1e5-amazon-weathers.yy661003.workers.dev/sitemap.xml
+Sitemap: https://chapter04.amazon-hike.com/sitemap.xml

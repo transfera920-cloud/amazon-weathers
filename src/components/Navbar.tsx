@@ -51,9 +51,9 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
         {/* Brand & Chapter Identification */}
         <div className="flex items-center space-x-3">
           <a
-            href="#top"
+            href="https://amazon-hike.com/intro"
             className="flex items-center space-x-2 text-emerald-400 hover:text-emerald-300 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded-md"
-            aria-label="返回頁首：亞馬遜國家山岳協會 第四章 氣象判讀"
+            aria-label="亞馬遜國家山岳協會"
           >
             <Mountain className="w-5 h-5" aria-hidden="true" />
             <span className="font-bold text-sm tracking-wide text-stone-100 hidden xs:inline">
