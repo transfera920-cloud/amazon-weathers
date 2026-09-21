@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { CoreConceptBanner } from './components/CoreConceptBanner';
 import { TableOfContents } from './components/TableOfContents';
@@ -46,9 +45,6 @@ export default function App() {
 
   return (
     <div id="top" className="min-h-screen flex flex-col bg-stone-50 text-stone-800 antialiased">
-      {/* Top Navbar with Reading Progress */}
-      <Navbar activeSection={activeSection} />
-
       {/* Main Educational Article Content */}
       <main className="flex-1 w-full" id="main-content">
         {/* Hero Section containing the only H1 */}

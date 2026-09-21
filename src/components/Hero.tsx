@@ -1,40 +1,25 @@
 import React from 'react';
-import { Clock, BookMarked, Smartphone, CloudSun, ShieldCheck, ArrowDown } from 'lucide-react';
+import { Clock, BookMarked, Smartphone, ShieldCheck, ArrowDown } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
     <section
       id="hero-section"
-      className="relative pt-20 pb-12 sm:pb-16 bg-gradient-to-b from-stone-900 via-stone-850 to-stone-900 text-stone-100 border-b border-stone-800 overflow-hidden"
+      className="relative pt-16 pb-12 sm:pt-20 sm:pb-16 bg-gradient-to-b from-stone-900 via-stone-850 to-stone-900 text-stone-100 border-b border-stone-800 overflow-hidden"
       aria-labelledby="main-heading"
     >
       {/* Background Decorative Grid */}
       <div className="absolute inset-0 opacity-5 pointer-events-none bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px]" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
-        {/* Breadcrumb Hierarchy */}
-        <nav aria-label="麵包屑導航" className="mb-4">
-          <ol className="flex flex-wrap items-center gap-1.5 text-xs text-stone-400">
-            <li>
-              <a href="https://amazon-hike.com/intro" className="hover:text-emerald-400 transition-colors">
-                亞馬遜國家山岳協會
-              </a>
-            </li>
-            <li aria-hidden="true" className="text-stone-600">/</li>
-            <li>
-              <span className="text-stone-300">登山安全教育計畫</span>
-            </li>
-            <li aria-hidden="true" className="text-stone-600">/</li>
-            <li aria-current="page" className="text-emerald-400 font-medium">
-              第四章 氣象判讀
-            </li>
-          </ol>
-        </nav>
-
-        {/* Chapter Super-title */}
-        <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-950/80 border border-emerald-700/60 text-emerald-300 text-xs font-semibold mb-4 tracking-wider uppercase">
-          <CloudSun className="w-3.5 h-3.5" aria-hidden="true" />
-          <span>CHAPTER 04 · 教材</span>
+        {/* Brand Link */}
+        <div className="mb-4">
+          <a
+            href="https://amazon-hike.com/intro"
+            className="inline-flex items-center text-xs text-stone-400 hover:text-emerald-400 transition-colors"
+          >
+            亞馬遜國家山岳協會
+          </a>
         </div>
 
         {/* The ONLY H1 of the Document */}
