@@ -5,7 +5,7 @@ export const Hero: React.FC = () => {
   return (
     <section
       id="hero-section"
-      className="relative pt-16 pb-12 sm:pt-20 sm:pb-16 bg-gradient-to-b from-stone-900 via-stone-850 to-stone-900 text-stone-100 border-b border-stone-800 overflow-hidden"
+      className="relative pt-16 pb-12 sm:pt-20 sm:pb-16 bg-gradient-to-b from-[#0b1015] via-slate-950 to-[#0b1015] text-stone-100 border-b border-slate-900 overflow-hidden"
       aria-labelledby="main-heading"
     >
       {/* Background Decorative Grid */}
@@ -22,6 +22,13 @@ export const Hero: React.FC = () => {
           </a>
         </div>
 
+        {/* Chapter Number Eyebrow Badge */}
+        <div className="mb-3">
+          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-900/90 text-stone-400 border border-slate-800 tracking-wider">
+            第四章
+          </span>
+        </div>
+
         {/* The ONLY H1 of the Document */}
         <h1
           id="main-heading"
@@ -36,20 +43,20 @@ export const Hero: React.FC = () => {
         </p>
 
         {/* Reading Meta Badges */}
-        <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs text-stone-400 mb-8 pb-4 border-b border-stone-800">
-          <div className="flex items-center space-x-1.5 bg-stone-800/80 px-2.5 py-1 rounded-md border border-stone-700">
+        <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-xs text-stone-400 mb-8 pb-4 border-b border-slate-800/80">
+          <div className="flex items-center space-x-1.5 bg-slate-900/80 px-2.5 py-1 rounded-md border border-slate-800">
             <Clock className="w-3.5 h-3.5 text-emerald-400" aria-hidden="true" />
             <span>閱讀時間 · 約 18 分鐘</span>
           </div>
-          <div className="flex items-center space-x-1.5 bg-stone-800/80 px-2.5 py-1 rounded-md border border-stone-700">
+          <div className="flex items-center space-x-1.5 bg-slate-900/80 px-2.5 py-1 rounded-md border border-slate-800">
             <BookMarked className="w-3.5 h-3.5 text-sky-400" aria-hidden="true" />
             <span>9 節內容 · 完整架構</span>
           </div>
-          <div className="flex items-center space-x-1.5 bg-stone-800/80 px-2.5 py-1 rounded-md border border-stone-700">
+          <div className="flex items-center space-x-1.5 bg-slate-900/80 px-2.5 py-1 rounded-md border border-slate-800">
             <Smartphone className="w-3.5 h-3.5 text-amber-400" aria-hidden="true" />
             <span>手機優先閱讀 (Mobile-First)</span>
           </div>
-          <div className="flex items-center space-x-1.5 bg-stone-800/80 px-2.5 py-1 rounded-md border border-stone-700">
+          <div className="flex items-center space-x-1.5 bg-slate-900/80 px-2.5 py-1 rounded-md border border-slate-800">
             <ShieldCheck className="w-3.5 h-3.5 text-teal-400" aria-hidden="true" />
             <span>AMNA 登山安全標準</span>
           </div>

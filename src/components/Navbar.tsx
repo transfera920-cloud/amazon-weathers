@@ -42,8 +42,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
       id="main-navigation"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
         isScrolled
-          ? 'bg-stone-900/95 text-stone-100 shadow-md backdrop-blur-md border-b border-stone-800'
-          : 'bg-stone-900 text-stone-100 border-b border-stone-800'
+          ? 'bg-[#0b1015]/95 text-stone-100 shadow-md backdrop-blur-md border-b border-slate-800'
+          : 'bg-[#0b1015] text-stone-100 border-b border-slate-850'
       }`}
     >
       {/* Top Bar */}
@@ -60,9 +60,9 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
               AMNA · 亞馬遜國家山岳協會
             </span>
           </a>
-          <span className="text-stone-600 hidden sm:inline">/</span>
+          <span className="text-slate-600 hidden sm:inline">/</span>
           <div className="flex items-center space-x-1.5 text-xs text-stone-300">
-            <span className="bg-stone-800 text-emerald-400 font-semibold px-2 py-0.5 rounded border border-stone-700">
+            <span className="bg-slate-900 text-emerald-400 font-semibold px-2 py-0.5 rounded border border-slate-800">
               第 04 章
             </span>
             <span className="hidden md:inline font-medium text-stone-200">氣象判讀</span>
@@ -73,25 +73,25 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
         <nav className="hidden lg:flex items-center space-x-1 text-xs" aria-label="章節快速導航">
           <a
             href="#sec-01"
-            className="px-2.5 py-1 text-stone-300 hover:text-white hover:bg-stone-800 rounded transition-colors"
+            className="px-2.5 py-1 text-stone-300 hover:text-white hover:bg-slate-900 rounded transition-colors"
           >
             01 重要性
           </a>
           <a
             href="#sec-02"
-            className="px-2.5 py-1 text-stone-300 hover:text-white hover:bg-stone-800 rounded transition-colors"
+            className="px-2.5 py-1 text-stone-300 hover:text-white hover:bg-slate-900 rounded transition-colors"
           >
             02 氣象特性
           </a>
           <a
             href="#sec-05"
-            className="px-2.5 py-1 text-stone-300 hover:text-white hover:bg-stone-800 rounded transition-colors"
+            className="px-2.5 py-1 text-stone-300 hover:text-white hover:bg-slate-900 rounded transition-colors"
           >
             05 危險天氣
           </a>
           <a
             href="#sec-06"
-            className="px-2.5 py-1 text-stone-300 hover:text-white hover:bg-stone-800 rounded transition-colors"
+            className="px-2.5 py-1 text-stone-300 hover:text-white hover:bg-slate-900 rounded transition-colors"
           >
             06 行程決策
           </a>
@@ -107,7 +107,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
         <div className="flex items-center space-x-2">
           <a
             href="#table-of-contents"
-            className="hidden sm:inline-flex items-center space-x-1 px-2.5 py-1 text-xs rounded bg-stone-800 hover:bg-stone-700 text-stone-200 border border-stone-700 transition-colors"
+            className="hidden sm:inline-flex items-center space-x-1 px-2.5 py-1 text-xs rounded bg-slate-900 hover:bg-slate-800 text-stone-200 border border-slate-800 transition-colors"
           >
             <BookOpen className="w-3.5 h-3.5 text-emerald-400" aria-hidden="true" />
             <span>章節目錄</span>
@@ -116,7 +116,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
             type="button"
             id="mobile-menu-button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-1.5 rounded-md text-stone-300 hover:text-white hover:bg-stone-800 lg:hidden focus:outline-none focus:ring-2 focus:ring-emerald-400"
+            className="p-1.5 rounded-md text-stone-300 hover:text-white hover:bg-slate-850 lg:hidden focus:outline-none focus:ring-2 focus:ring-emerald-400"
             aria-expanded={mobileMenuOpen}
             aria-controls="mobile-navigation-drawer"
             aria-label={mobileMenuOpen ? '關閉章節目錄' : '開啟章節目錄'}
@@ -131,7 +131,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
       </div>
 
       {/* Reading Progress Line */}
-      <div className="w-full bg-stone-800 h-0.5">
+      <div className="w-full bg-slate-900 h-0.5">
         <div
           className="bg-emerald-500 h-0.5 transition-all duration-150"
           style={{ width: `${readProgress}%` }}
@@ -147,7 +147,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
       {mobileMenuOpen && (
         <div
           id="mobile-navigation-drawer"
-          className="lg:hidden bg-stone-900 border-b border-stone-800 px-4 py-3 shadow-xl max-h-[80vh] overflow-y-auto"
+          className="lg:hidden bg-[#0b1015] border-b border-slate-800 px-4 py-3 shadow-xl max-h-[80vh] overflow-y-auto"
         >
           <div className="text-xs font-semibold text-stone-400 uppercase tracking-wider mb-2">
             第四章 氣象判讀 · 九大章節快速導覽
@@ -160,8 +160,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
                 onClick={() => setMobileMenuOpen(false)}
                 className={`flex items-center justify-between px-3 py-2 rounded text-sm transition-colors ${
                   activeSection === sec.id
-                    ? 'bg-emerald-900/60 text-emerald-300 font-semibold border border-emerald-700/50'
-                    : 'text-stone-300 hover:bg-stone-800 hover:text-white'
+                    ? 'bg-emerald-950/80 text-emerald-300 font-semibold border border-emerald-700/60'
+                    : 'text-stone-300 hover:bg-slate-900 hover:text-white'
                 }`}
               >
                 <div className="flex items-center space-x-2">

@@ -83,33 +83,33 @@ export const LeaderChecklist: React.FC = () => {
   const progressPercent = Math.round((completedCount / totalCount) * 100);
 
   return (
-    <div className="my-8 rounded-2xl border border-stone-200 bg-white p-5 sm:p-7 shadow-sm">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-stone-200">
+    <div className="my-8 rounded-2xl border border-slate-800 bg-slate-900/80 p-5 sm:p-7 shadow-sm">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-slate-800">
         <div>
           <div className="flex items-center space-x-2">
-            <span className="bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-0.5 rounded border border-emerald-300">
+            <span className="bg-emerald-950/70 text-emerald-400 text-xs font-bold px-2 py-0.5 rounded border border-emerald-800/60">
               實務工具
             </span>
-            <h3 className="text-base font-bold text-stone-900">
+            <h3 className="text-base font-bold text-stone-100">
               領隊氣象判讀實務檢核表 (Leader Weather Checklist)
             </h3>
           </div>
-          <p className="text-xs text-stone-500 mt-1">
+          <p className="text-xs text-stone-400 mt-1">
             出發前與行程中隨時逐項勾選，確保無任何致命盲區被遺漏。
           </p>
         </div>
 
         <div className="flex items-center space-x-3 self-end sm:self-auto">
           <div className="text-right">
-            <div className="text-xs text-stone-500">檢核完成度</div>
-            <div className="font-mono text-base font-extrabold text-emerald-700">
+            <div className="text-xs text-stone-400">檢核完成度</div>
+            <div className="font-mono text-base font-extrabold text-emerald-400">
               {completedCount} / {totalCount} ({progressPercent}%)
             </div>
           </div>
           <button
             type="button"
             onClick={resetAll}
-            className="p-1.5 rounded-lg border border-stone-200 text-stone-500 hover:text-stone-800 hover:bg-stone-50 text-xs flex items-center space-x-1 transition-colors"
+            className="p-1.5 rounded-lg border border-slate-800 bg-slate-950 text-stone-400 hover:text-stone-200 hover:bg-slate-850 text-xs flex items-center space-x-1 transition-colors"
             title="清空重置"
             aria-label="清空檢核表重置"
           >
@@ -120,9 +120,9 @@ export const LeaderChecklist: React.FC = () => {
       </div>
 
       {/* Progress Bar */}
-      <div className="w-full bg-stone-100 h-2 rounded-full overflow-hidden mt-4 mb-6">
+      <div className="w-full bg-slate-950 h-2 rounded-full overflow-hidden mt-4 mb-6">
         <div
-          className="bg-emerald-600 h-2 rounded-full transition-all duration-300"
+          className="bg-emerald-500 h-2 rounded-full transition-all duration-300"
           style={{ width: `${progressPercent}%` }}
         />
       </div>
@@ -131,8 +131,8 @@ export const LeaderChecklist: React.FC = () => {
       <div className="space-y-6">
         {/* Pre-trip Items */}
         <div>
-          <div className="text-xs font-bold text-emerald-800 uppercase tracking-wider mb-2.5 flex items-center space-x-1.5">
-            <span className="w-2 h-2 rounded-full bg-emerald-600" />
+          <div className="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-2.5 flex items-center space-x-1.5">
+            <span className="w-2 h-2 rounded-full bg-emerald-500" />
             <span>第一階段：出發前評估流程 (Pre-trip Verification)</span>
           </div>
           <div className="space-y-2">
@@ -147,26 +147,26 @@ export const LeaderChecklist: React.FC = () => {
                     onClick={() => toggle(item.id)}
                     className={`w-full text-left p-3 rounded-xl border transition-all flex items-start space-x-3 ${
                       isChecked
-                        ? 'bg-emerald-50/70 border-emerald-300'
-                        : 'bg-stone-50/60 border-stone-200 hover:bg-stone-100/70'
+                        ? 'bg-emerald-950/40 border-emerald-800/80 text-emerald-200'
+                        : 'bg-slate-950/70 border-slate-800/90 hover:bg-slate-850/80 text-stone-300'
                     }`}
                   >
-                    <div className="mt-0.5 text-emerald-700 flex-shrink-0">
+                    <div className="mt-0.5 text-emerald-400 flex-shrink-0">
                       {isChecked ? (
-                        <CheckSquare className="w-5 h-5 fill-emerald-100" aria-hidden="true" />
+                        <CheckSquare className="w-5 h-5 fill-emerald-950" aria-hidden="true" />
                       ) : (
-                        <Square className="w-5 h-5 text-stone-400" aria-hidden="true" />
+                        <Square className="w-5 h-5 text-slate-500" aria-hidden="true" />
                       )}
                     </div>
                     <div>
                       <div
                         className={`text-sm font-bold ${
-                          isChecked ? 'text-emerald-900 line-through opacity-80' : 'text-stone-800'
+                          isChecked ? 'text-emerald-300/80 line-through' : 'text-stone-200'
                         }`}
                       >
                         {item.title}
                       </div>
-                      <div className="text-xs text-stone-600 mt-0.5 leading-relaxed">
+                      <div className="text-xs text-stone-400 mt-0.5 leading-relaxed">
                         {item.detail}
                       </div>
                     </div>
@@ -178,8 +178,8 @@ export const LeaderChecklist: React.FC = () => {
 
         {/* On-trail Items */}
         <div>
-          <div className="text-xs font-bold text-amber-800 uppercase tracking-wider mb-2.5 flex items-center space-x-1.5">
-            <span className="w-2 h-2 rounded-full bg-amber-600" />
+          <div className="text-xs font-bold text-amber-400 uppercase tracking-wider mb-2.5 flex items-center space-x-1.5">
+            <span className="w-2 h-2 rounded-full bg-amber-500" />
             <span>第二階段：行程中動態循環 (On-trail Real-time Loop)</span>
           </div>
           <div className="space-y-2">
@@ -194,26 +194,26 @@ export const LeaderChecklist: React.FC = () => {
                     onClick={() => toggle(item.id)}
                     className={`w-full text-left p-3 rounded-xl border transition-all flex items-start space-x-3 ${
                       isChecked
-                        ? 'bg-amber-50/70 border-amber-300'
-                        : 'bg-stone-50/60 border-stone-200 hover:bg-stone-100/70'
+                        ? 'bg-amber-950/40 border-amber-800/80 text-amber-200'
+                        : 'bg-slate-950/70 border-slate-800/90 hover:bg-slate-850/80 text-stone-300'
                     }`}
                   >
-                    <div className="mt-0.5 text-amber-700 flex-shrink-0">
+                    <div className="mt-0.5 text-amber-400 flex-shrink-0">
                       {isChecked ? (
-                        <CheckSquare className="w-5 h-5 fill-amber-100" aria-hidden="true" />
+                        <CheckSquare className="w-5 h-5 fill-amber-950" aria-hidden="true" />
                       ) : (
-                        <Square className="w-5 h-5 text-stone-400" aria-hidden="true" />
+                        <Square className="w-5 h-5 text-slate-500" aria-hidden="true" />
                       )}
                     </div>
                     <div>
                       <div
                         className={`text-sm font-bold ${
-                          isChecked ? 'text-amber-900 line-through opacity-80' : 'text-stone-800'
+                          isChecked ? 'text-amber-300/80 line-through' : 'text-stone-200'
                         }`}
                       >
                         {item.title}
                       </div>
-                      <div className="text-xs text-stone-600 mt-0.5 leading-relaxed">
+                      <div className="text-xs text-stone-400 mt-0.5 leading-relaxed">
                         {item.detail}
                       </div>
                     </div>
@@ -226,13 +226,13 @@ export const LeaderChecklist: React.FC = () => {
 
       {/* Completion Status Note */}
       {completedCount === totalCount ? (
-        <div className="mt-5 p-3.5 rounded-xl bg-emerald-100 border border-emerald-300 text-emerald-900 flex items-center space-x-2 text-xs font-bold">
-          <CheckCircle className="w-4 h-4 text-emerald-700 flex-shrink-0" aria-hidden="true" />
+        <div className="mt-5 p-3.5 rounded-xl bg-emerald-950/70 border border-emerald-800/80 text-emerald-200 flex items-center space-x-2 text-xs font-bold">
+          <CheckCircle className="w-4 h-4 text-emerald-400 flex-shrink-0" aria-hidden="true" />
           <span>恭喜！您已完成全套領隊氣象判讀核對程序，請隨時依現場實測動態保持警戒！</span>
         </div>
       ) : (
-        <div className="mt-5 p-3 rounded-xl bg-stone-100 text-stone-600 text-xs flex items-center space-x-2">
-          <AlertOctagon className="w-4 h-4 text-stone-400 flex-shrink-0" aria-hidden="true" />
+        <div className="mt-5 p-3 rounded-xl bg-slate-950 border border-slate-800 text-stone-400 text-xs flex items-center space-x-2">
+          <AlertOctagon className="w-4 h-4 text-slate-500 flex-shrink-0" aria-hidden="true" />
           <span>備註：高山環境充滿未知，領隊的成熟在於永遠保有隨時依新事證調整決策的勇氣。</span>
         </div>
       )}

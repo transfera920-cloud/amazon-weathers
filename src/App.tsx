@@ -44,7 +44,7 @@ export default function App() {
   }, []);
 
   return (
-    <div id="top" className="min-h-screen flex flex-col bg-stone-50 text-stone-800 antialiased">
+    <div id="top" className="min-h-screen flex flex-col bg-[#0b1015] text-stone-100 antialiased">
       {/* Main Educational Article Content */}
       <main className="flex-1 w-full" id="main-content">
         {/* Hero Section containing the only H1 */}

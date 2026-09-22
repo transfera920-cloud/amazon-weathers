@@ -75,25 +75,25 @@ export const TableOfContents: React.FC<TOCProps> = ({ activeSection }) => {
   return (
     <section
       id="table-of-contents"
-      className="py-10 bg-white border-b border-stone-200"
+      className="py-10 bg-[#0b1015] border-b border-slate-900"
       aria-label="第四章章節目錄"
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between mb-6">
           <div className="flex items-center space-x-2.5">
-            <div className="p-2 rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200">
+            <div className="p-2 rounded-lg bg-emerald-950/60 text-emerald-400 border border-emerald-800/60">
               <ListOrdered className="w-5 h-5" aria-hidden="true" />
             </div>
             <div>
-              <h2 className="text-xl font-bold text-stone-900">
+              <h2 className="text-xl font-bold text-stone-100">
                 本章九大單元目錄
               </h2>
-              <p className="text-xs text-stone-500 mt-0.5">
+              <p className="text-xs text-stone-400 mt-0.5">
                 點擊可直接快速平滑捲動至對應章節段落
               </p>
             </div>
           </div>
-          <span className="hidden sm:inline-block text-xs font-medium px-2.5 py-1 rounded bg-stone-100 text-stone-600 border border-stone-200">
+          <span className="hidden sm:inline-block text-xs font-medium px-2.5 py-1 rounded bg-slate-900 text-stone-400 border border-slate-800">
             共 9 節 · 9 個 Native SVG 圖解
           </span>
         </div>
@@ -105,32 +105,32 @@ export const TableOfContents: React.FC<TOCProps> = ({ activeSection }) => {
               href={`#${sec.id}`}
               className={`p-4 rounded-xl border transition-all text-left group flex flex-col justify-between ${
                 activeSection === sec.id
-                  ? 'bg-emerald-50/80 border-emerald-400 shadow-sm'
-                  : 'bg-stone-50/70 border-stone-200/80 hover:bg-white hover:border-emerald-300 hover:shadow-sm'
+                  ? 'bg-emerald-950/70 border-emerald-600 shadow-sm'
+                  : 'bg-slate-900/70 border-slate-800/80 hover:bg-slate-850 hover:border-emerald-500/50 hover:shadow-sm'
               }`}
             >
               <div>
                 <div className="flex items-center justify-between mb-1.5">
-                  <span className="font-mono text-xs font-bold text-emerald-800 bg-emerald-100/70 px-2 py-0.5 rounded">
+                  <span className="font-mono text-xs font-bold text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60">
                     SECTION {sec.number}
                   </span>
                   {sec.number === '09' && (
-                    <span className="text-[10px] font-bold text-amber-800 bg-amber-100 px-1.5 py-0.5 rounded border border-amber-200">
+                    <span className="text-[10px] font-bold text-amber-300 bg-amber-950/80 px-1.5 py-0.5 rounded border border-amber-800/60">
                       本章核心
                     </span>
                   )}
                 </div>
-                <h3 className="text-sm font-bold text-stone-900 group-hover:text-emerald-700 transition-colors">
+                <h3 className="text-sm font-bold text-stone-100 group-hover:text-emerald-400 transition-colors">
                   {sec.title}
                 </h3>
-                <p className="text-xs text-stone-600 mt-1 line-clamp-2 leading-relaxed">
+                <p className="text-xs text-stone-400 mt-1 line-clamp-2 leading-relaxed">
                   {sec.desc}
                 </p>
               </div>
 
-              <div className="mt-3 pt-2 border-t border-stone-200/60 flex items-center justify-between text-[11px] text-stone-500">
+              <div className="mt-3 pt-2 border-t border-slate-800/80 flex items-center justify-between text-[11px] text-stone-500">
                 <span className="truncate pr-1">{sec.diagram}</span>
-                <ChevronRight className="w-3.5 h-3.5 text-stone-400 group-hover:text-emerald-600 group-hover:translate-x-0.5 transition-transform flex-shrink-0" aria-hidden="true" />
+                <ChevronRight className="w-3.5 h-3.5 text-stone-500 group-hover:text-emerald-400 group-hover:translate-x-0.5 transition-transform flex-shrink-0" aria-hidden="true" />
               </div>
             </a>
           ))}
