@@ -51,7 +51,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
         {/* Brand & Chapter Identification */}
         <div className="flex items-center space-x-3">
           <a
-            href="https://amazon-hike.com/intro"
+            href="https://amazon-hike.com/chapter01/"
             className="flex items-center space-x-2 text-emerald-400 hover:text-emerald-300 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400 rounded-md"
             aria-label="亞馬遜國家山岳協會"
           >

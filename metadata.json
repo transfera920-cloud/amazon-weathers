@@ -1,6 +1,6 @@
 {
   "name": "第四章 氣象判讀｜亞馬遜國家山岳協會",
-  "description": "學習山區氣象特性、天氣資料判讀、雲霧風雨觀察、危險天氣辨識與登山決策，建立登山者基本氣象判讀能力。",
+  "description": "了解登山氣象判讀，掌握登山天氣、氣象預報與山區天候變化，建立行前判斷與登山過程中的基本氣象判讀能力。",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

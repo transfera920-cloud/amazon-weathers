@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
         {/* Brand Link */}
         <div className="mb-4">
           <a
-            href="https://amazon-hike.com/intro"
+            href="https://amazon-hike.com/chapter01/"
             className="inline-flex items-center text-xs text-stone-400 hover:text-emerald-400 transition-colors"
           >
             亞馬遜國家山岳協會
@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
           id="main-heading"
           className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4 leading-tight"
         >
-          氣象判讀
+          登山氣象判讀
         </h1>
 
         {/* Subtitle */}

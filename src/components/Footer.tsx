@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
         <div className="flex items-center space-x-2 text-emerald-400 font-bold text-base">
           <Mountain className="w-5 h-5" aria-hidden="true" />
           <a
-            href="https://amazon-hike.com/intro"
+            href="https://amazon-hike.com/chapter01/"
             className="hover:text-emerald-300 transition-colors"
           >
             亞馬遜國家山岳協會
